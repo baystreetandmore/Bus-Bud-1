@@ -1,0 +1,11 @@
+# This file forces the deployment platform to use our custom build process
+# and correctly look for the 'dist' folder, overriding any GUI settings.
+apphosting:
+  # The scripts section specifies the exact commands to run during the build step.
+  # We combine install and build to ensure dependencies are present.
+  scripts:
+    buildCommand: npm install && npm run build
+  
+  # The hosting section explicitly points to the output folder.
+  hosting:
+    publicDirectory: dist
