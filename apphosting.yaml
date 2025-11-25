@@ -1,0 +1,8 @@
+apphosting:
+  # Force Firebase to execute the full install and build script.
+  scripts:
+    buildCommand: npm install && npm run build
+  
+  # Force Firebase to look for the output in the 'public' folder.
+  hosting:
+    publicDirectory: public
