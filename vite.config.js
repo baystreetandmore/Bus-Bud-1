@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // *** CHANGE TO 'public' ***
-    outDir: 'public', // Tells Vite to output files to a 'public' folder
+    outDir: 'build', // Tells Vite to output files to a 'build' folder instead of 'dist'
   },
 })
